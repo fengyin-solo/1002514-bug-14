@@ -5,6 +5,7 @@ const Interlock = () => import('@/views/interlock/index.vue')
 const Trackcircuit = () => import('@/views/trackcircuit/index.vue')
 const Signal = () => import('@/views/signal/index.vue')
 const Pointmachine = () => import('@/views/pointmachine/index.vue')
+const PointmachineDetail = () => import('@/views/pointmachine/detail.vue')
 const Cable = () => import('@/views/cable/index.vue')
 const Powersupply = () => import('@/views/powersupply/index.vue')
 const Atp = () => import('@/views/atp/index.vue')
@@ -30,6 +31,7 @@ const router = createRouter({
     { path: '/trackcircuit', name: 'trackcircuit', component: Trackcircuit },
     { path: '/signal', name: 'signal', component: Signal },
     { path: '/pointmachine', name: 'pointmachine', component: Pointmachine },
+    { path: '/pointmachine/:id', name: 'pointmachine-detail', component: PointmachineDetail },
     { path: '/cable', name: 'cable', component: Cable },
     { path: '/powersupply', name: 'powersupply', component: Powersupply },
     { path: '/atp', name: 'atp', component: Atp },
